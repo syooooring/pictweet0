@@ -14,6 +14,11 @@ class TweetsController < ApplicationController
     Tweet.create(tweet_params)
   end
 
+  def destroy
+    tweet = Tweet.find(params[:id])
+    tweet.destroy
+  end
+
 
   private
 

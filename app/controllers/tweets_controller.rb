@@ -28,6 +28,10 @@ class TweetsController < ApplicationController
     tweet.update(tweet_params)
   end
 
+  def show
+    @tweet = Tweet.find(parms[:id])
+  end
+
 
   private
 

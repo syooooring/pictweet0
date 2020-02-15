@@ -40,4 +40,8 @@ class TweetsController < ApplicationController
       params.require(:tweet).permit(:name, :image, :text)
     end
 
+    def set_tweet
+      @tweet = Tweet.find(params[:id]) 
+    end
+
 end

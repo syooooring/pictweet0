@@ -35,7 +35,6 @@
                 </li>
               </ul>
             </span>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
             <%= link_to  "投稿する", "/tweets/new", class: "post" %>
           </div>
         <% else %>
@@ -44,9 +43,6 @@
             <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
           </div>
         <% end %>
-        <div class="user_nav grid-6">
-          <a class="post" href="/tweets/new">投稿する</a>
-        </div>
       </div>
     </header>
 
